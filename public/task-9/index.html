@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="javasc.js"></script>
+  <style type="text/css">
+  	.container {
+  		width: 40%;
+  	}
+  		input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+  	}
+  </style>
+</head>
+<body>
+	<div class="container bg-light">
+
+  <form class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="uname">Name :</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter Name" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="age">Age :</label>
+      <input type="number" class="form-control" id="uage" placeholder="Enter Your Age" name="age" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form_group">
+    <label for="umale">Gender :</label>
+    <div class="radio" >    
+    	<label><input type="radio" name="umale" value="male">Male</label>
+    	<label><input type="radio" name="umale" value="fe-male">Fe-Male</label>
+    	<label><input type="radio" name="umale" value="others">Others</label>
+    </div>	
+    </div>
+    <div class="form-group">
+      <label for="college">College :</label>
+      <input type="text" class="form-control" id="ucollege" placeholder="Enter Your College Name" name="college" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+     <label for="Department">Department :</label>
+      <select class="mdb-select form-control mb-form" name="udepartment" id="udepartment">
+      	<option value="disable selected">Select Your Department</option>
+      	<option>Mechanical Engineering</option>
+      	<option>Electrical Engineering</option>
+      	<option>Computer Science Engineering</option>
+      	<option>Civil Engineering</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cgpa">Cgpa :</label>
+      <input type="Number" class="form-control" id="ucgpa" placeholder="Enter Your Cgpa" name="cgpa" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="">E-mail :</label>
+      <input type="e-mail" class="form-control" id="umail" placeholder="Enter Your E-mail Id" name="E-mail" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+   <div class="mx-auto text-center"> <button type="button" class="btn btn-primary " onclick="myfunc()">Submit</button></div>
+  </form>
+</div>
+	</div>
+
+</body>
+</html>
